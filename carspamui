@@ -1,0 +1,255 @@
+local ScreenGui = Instance.new("ScreenGui")
+local MainFrame = Instance.new("Frame")
+local Button = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local Text = Instance.new("TextLabel")
+local UICorner_2 = Instance.new("UICorner")
+local trash = Instance.new("ImageButton")
+local Close = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local title = Instance.new("Frame")
+local hub = Instance.new("TextLabel")
+local UICorner_4 = Instance.new("UICorner")
+local UITextSizeConstraint = Instance.new("UITextSizeConstraint")
+local UIGradient = Instance.new("UIGradient")
+local jamal = Instance.new("TextLabel")
+local UITextSizeConstraint_2 = Instance.new("UITextSizeConstraint")
+local UIGradient_2 = Instance.new("UIGradient")
+local total = Instance.new("TextLabel")
+local car = Instance.new("TextLabel")
+--UIStroke
+
+local UIStroke = Instance.new("UIStroke")
+
+--Properties:
+
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+ScreenGui.ResetOnSpawn = false
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = ScreenGui
+MainFrame.AnchorPoint = Vector2.new(0.5, 0.5)
+MainFrame.BackgroundColor3 = Color3.fromRGB(51, 51, 51)
+MainFrame.Position = UDim2.new(0.5, 0, 0.5, 0)
+MainFrame.Size = UDim2.new(0, 0,0, 0)
+MainFrame:TweenSize(UDim2.new(0.2, 100,0.1, 100))
+
+UIStroke.Name = "UIStroke"
+UIStroke.Parent = MainFrame
+UIStroke.Thickness = 5
+UIStroke.Color = Color3.fromRGB(0,0,0)
+
+Button.Name = "Button"
+Button.Parent = MainFrame
+Button.AnchorPoint = Vector2.new(0.5, 0.5)
+Button.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Button.Position = UDim2.new(0.5, 0, 0.538230479, 0)
+Button.Size = UDim2.new(0, 200, 0, 50)
+Button.Font = Enum.Font.GothamBold
+Button.Text = "Off"
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.TextSize = 42.000
+
+UICorner.Parent = Button
+
+Text.Name = "Text"
+Text.Parent = MainFrame
+Text.AnchorPoint = Vector2.new(0.5, 0.5)
+Text.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Text.BackgroundTransparency = 1.000
+Text.Position = UDim2.new(0.5, 0, 0.303665966, 0)
+Text.Size = UDim2.new(0, 200, 0, 50)
+Text.Font = Enum.Font.SourceSansSemibold
+Text.Text = "Car Spammer"
+Text.TextColor3 = Color3.fromRGB(255, 255, 255)
+Text.TextSize = 38.000
+
+UICorner_2.CornerRadius = UDim.new(0, 15)
+UICorner_2.Parent = MainFrame
+
+trash.Name = "trash"
+trash.Parent = MainFrame
+trash.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+trash.BackgroundTransparency = 1.000
+trash.BorderColor3 = Color3.fromRGB(27, 42, 53)
+trash.Position = UDim2.new(0.898309767, 0, 0.733129025, 0)
+trash.Size = UDim2.new(0, 40, 0, 40)
+trash.Image = "rbxassetid://9381916543"
+trash.HoverImage = "rbxassetid://9381862501"
+
+Close.Name = "Close"
+Close.Parent = MainFrame
+Close.AnchorPoint = Vector2.new(0.5, 0.5)
+Close.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.943437457, 0, 0.134079754, 0)
+Close.Size = UDim2.new(0, 50, 0, 50)
+Close.Font = Enum.Font.SciFi
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 42.000
+
+UICorner_3.Parent = Close
+
+title.Name = "title"
+title.Parent = MainFrame
+title.AnchorPoint = Vector2.new(0.5, 0.5)
+title.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+title.BackgroundTransparency = 1.000
+title.Position = UDim2.new(0.5, 0, 0.124067388, 0)
+title.Size = UDim2.new(1, 0, 0.200000003, 0)
+
+hub.Name = "hub"
+hub.Parent = title
+hub.BackgroundColor3 = Color3.fromRGB(247, 151, 29)
+hub.Position = UDim2.new(0.189999998, 0, 0.0179999992, 0)
+hub.Size = UDim2.new(0.165615976, 0, 0.72335124, 0)
+hub.Font = Enum.Font.ArialBold
+hub.Text = "hub"
+hub.TextColor3 = Color3.fromRGB(0, 0, 0)
+hub.TextScaled = true
+hub.TextSize = 45.000
+hub.TextWrapped = true
+
+UICorner_4.CornerRadius = UDim.new(0, 5)
+UICorner_4.Parent = hub
+
+UITextSizeConstraint.Parent = hub
+UITextSizeConstraint.MaxTextSize = 45
+
+UIGradient.Parent = hub
+
+jamal.Name = "jamal"
+jamal.Parent = title
+jamal.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+jamal.BackgroundTransparency = 1.000
+jamal.Position = UDim2.new(-0.019942224, 0, 0.0180505011, 0)
+jamal.Size = UDim2.new(0.254026353, 0, 0.723505378, 0)
+jamal.Font = Enum.Font.ArialBold
+jamal.Text = "Jamal"
+jamal.TextColor3 = Color3.fromRGB(255, 255, 255)
+jamal.TextScaled = true
+jamal.TextSize = 37.000
+jamal.TextWrapped = true
+
+UITextSizeConstraint_2.Parent = jamal
+UITextSizeConstraint_2.MaxTextSize = 37
+
+UIGradient_2.Color = ColorSequence.new{ColorSequenceKeypoint.new(0.00, Color3.fromRGB(81, 81, 81)), ColorSequenceKeypoint.new(1.00, Color3.fromRGB(255, 255, 255))}
+UIGradient_2.Rotation = 35
+UIGradient_2.Parent = MainFrame
+
+total.Name = "total"
+total.Parent = MainFrame
+total.AnchorPoint = Vector2.new(0.5, 0.5)
+total.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+total.BackgroundTransparency = 1.000
+total.Position = UDim2.new(0.30478704, 0, 0.903407991, 0)
+total.Size = UDim2.new(0, 120, 0, 50)
+total.Font = Enum.Font.SourceSansItalic
+total.Text = "0"
+total.TextColor3 = Color3.fromRGB(255, 255, 255)
+total.TextSize = 20.000
+
+car.Name = "car"
+car.Parent = MainFrame
+car.AnchorPoint = Vector2.new(0.5, 0.5)
+car.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+car.BackgroundTransparency = 1.000
+car.Position = UDim2.new(0.139754295, 0, 0.903407991, 0)
+car.Size = UDim2.new(0, 200, 0, 50)
+car.Font = Enum.Font.SourceSansItalic
+car.Text = "Car Spawned:"
+car.TextColor3 = Color3.fromRGB(255, 255, 255)
+car.TextSize = 20.000
+
+-- Scripts:
+
+local function YDPJRZ_fake_script() -- Button.LocalScript 
+	local script = Instance.new('LocalScript', Button)
+
+	local btn = script.Parent
+	local on = false
+	
+	btn.MouseButton1Click:Connect(function()
+		if on == false then
+			on = true
+			btn.Text = "ON"
+			btn.BackgroundColor3 = Color3.fromRGB(63, 208, 75)
+			local plr = game.Players.LocalPlayer
+	
+			repeat
+				wait()
+				script.Parent.Parent.total.Text += 1
+				local cars1 = {
+					[1] = "Perodua Myvi"
+				}
+	
+				game:GetService("ReplicatedStorage").SpawnCar:FireServer(unpack(cars1))
+			until on == false
+		else
+			btn.Text = "OFF"
+			btn.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+			on = false
+		end
+	end)
+end
+coroutine.wrap(YDPJRZ_fake_script)()
+local function HNMMWR_fake_script() -- MainFrame.Dragable 
+	local script = Instance.new('LocalScript', MainFrame)
+
+	frame = script.Parent
+	frame.Draggable = true
+	frame.Active = true
+	frame.Selectable = true
+end
+coroutine.wrap(HNMMWR_fake_script)()
+local function NGAFT_fake_script() -- trash.LocalScript 
+	local script = Instance.new('LocalScript', trash)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		local plr = game.Players.LocalPlayer
+		local total = script.Parent.Parent.total
+		local amount = 0
+        local cr = 0
+        local car = script.Parent.Parent.car
+		for _, child in pairs (workspace:GetChildren()) do
+			-- do the thing
+			if child.Name == plr.Name.."sCar" then
+				print("Yes")
+				amount = amount + 1
+			end
+		end
+			for i = amount, 0, 1 do
+				total.Text = i
+			end
+	
+		repeat
+			wait()
+            total.Text = ""
+            car.Text = "Deleting..."
+            
+			local args = {	
+				[1] = workspace:FindFirstChild(plr.Name.."sCar")
+			}
+			game:GetService("ReplicatedStorage").DeleteCar:FireServer(unpack(args))
+			until workspace:FindFirstChild(plr.Name.."sCar") == nil
+			if workspace:FindFirstChild(plr.Name.."sCar") == nil then
+				total.Text = 0
+                car.Text = "Car Spawned:"
+               
+		end
+	end)
+end
+coroutine.wrap(NGAFT_fake_script)()
+local function QJFMOYC_fake_script() -- Close.LocalScript 
+	local script = Instance.new('LocalScript', Close)
+
+	local btn = script.Parent
+	
+	btn.MouseButton1Click:Connect(function()
+		script.Parent.Parent.Parent:Destroy()
+	end)
+end
+coroutine.wrap(QJFMOYC_fake_script)()
